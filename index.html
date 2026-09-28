@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#FFFFF0">
+  <title>Md Sakib | Digital Marketing Expert, SEO, WordPress & Brand Design</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Add your own CSS overrides here or in css/custom.css -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <!-- Header + nav are rendered by js/main.js -->
+  <header id="site-header"></header>
+
+  <main>
+    <!--
+      Each section below is rendered from js/data.js (or the backend).
+      You can reorder, remove or add your own custom HTML between them.
+      Available renderers: hero, marquee, services, portfolio, process,
+      about, testimonials, faq, contact, cta, blog, post
+    -->
+    <section class="hero" data-render="hero"></section>
+    <section class="marquee-section" data-render="marquee"></section>
+    <section class="section" id="services" data-render="services"></section>
+    <section class="section section-alt section-line" id="work" data-render="portfolio" data-limit="6"></section>
+    <section class="section" id="process" data-render="process"></section>
+    <section class="section section-alt section-line" id="about" data-render="about"></section>
+    <section class="section" id="testimonials" data-render="testimonials"></section>
+    <section class="section section-alt section-line" id="faq" data-render="faq"></section>
+    <section class="cta-band" data-render="cta"></section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <!-- Site content (generated live by the backend, static fallback otherwise) -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Add your own JavaScript in js/custom.js -->
+  <script src="js/custom.js"></script>
+</body>
+</html>
